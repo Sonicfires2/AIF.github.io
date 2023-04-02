@@ -3,6 +3,7 @@
 The website is here at: https://sonicfires2.github.io/AIF.github.io/main.html
 
 Website intended structure:
+
 Welcome
 - navbar
 - Intro title     - Intro picture
