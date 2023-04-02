@@ -242,3 +242,17 @@ function getStepActiveMarkerPosX(currentStep) {
 function getElementWidth(elem) {
     return elem.clientWidth
 }
+
+function backToInvisble() {
+    console.log("WTF")
+    setTimeout(function(){
+        document.getElementById('gmailCopyInfo').style.visibility = 'hidden'; 
+    }, 2000);
+}
+
+function Copy() {
+    let alert = document.getElementById("gmailCopyInfo")
+    alert.style.visibility = "visible";
+    navigator.clipboard.writeText("animeinterestfloor@gmail.com");
+    backToInvisble();
+}
