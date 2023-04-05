@@ -29,7 +29,9 @@ Why us?
 - Just a section to show the advantages of joining the floor
 
 Housing Info
+- Information about on-floor activity 
 - Infomation about housing process
 
 Contact
 - Contact info/links
+- Gmail
