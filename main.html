@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+    </style>
 </head>
 <body>
     <div id="mainContainer">
@@ -30,10 +32,10 @@
                     <div class="header-items dis"></div>
                     <div class="header-items"></div>
                     <div class="header-items"></div>
-                    <div class="header-items">ABOUT US</div>
-                    <div class="header-items">ACTIVITIES</div>
-                    <div class="header-items">LEADERSHIP</div>
-                    <div class="header-items">HOUSING</div>
+                    <div class="header-items pointer needBorder" onclick="moveToAbout()">ABOUT US</div>
+                    <div class="header-items pointer needBorder" onclick="moveToActivities()">ACTIVITIES</div>
+                    <div class="header-items pointer needBorder" onclick="moveToLeadership()">LEADERSHIP</div>
+                    <div class="header-items pointer needBorder" onclick="moveToHousing()">HOUSING</div>
                 </div>
             </div>
 
@@ -52,8 +54,8 @@
 
             <!-- Extra buttons which contain important info -->
             <div id="button-container">
-                <div class="headerButton" id="contactUsButton">Contact us</div>
-                <div class="headerButton" id="learnMoreButton">Learn More</div>
+                <div class="headerButton pointer" id="contactUsButton" onclick="moveToContact()">Contact us</div>
+                <div class="headerButton pointer" id="learnMoreButton" onclick="moveToAbout()">Learn More</div>
             </div>
             <div class="placeHolder" style="display: block;"></div>
 
@@ -67,7 +69,7 @@
         <!-- End of welcome section -->
 
         <!-- Beginning of the about us section -->
-        <div class="welcome-message">
+        <div class="welcome-message" id="welcome-message">
             <p>We are</p>
             <b>
                 <span>
@@ -150,7 +152,7 @@
                 <!-- If add more depection, add more picture to match or change the whole clicking mechanism of this section all together -->
                 <div class="events-description">
                     <div id="event2">
-                        <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16" style="align-items: center; align-self:center; margin-bottom:15px;"><g id="correct-path2" fill="currentColor"><path d="M8 1.248c1.857 0 3.526.641 4.65 1.794a4.978 4.978 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0C4.75 0 2.12 1.48.844 4.122a4.979 4.979 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248z"/><path d="M12 12a3.988 3.988 0 0 1-2.786-1.13l-.002-.002a1.612 1.612 0 0 0-.276-.167A2.164 2.164 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.612 1.612 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8z"/></g></svg>
+                        <svg class="pointer" id="svg-2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16" style="align-items: center; align-self:center; margin-bottom:15px;"><g id="correct-path2" fill="currentColor"><path d="M8 1.248c1.857 0 3.526.641 4.65 1.794a4.978 4.978 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0C4.75 0 2.12 1.48.844 4.122a4.979 4.979 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248z"/><path d="M12 12a3.988 3.988 0 0 1-2.786-1.13l-.002-.002a1.612 1.612 0 0 0-.276-.167A2.164 2.164 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.612 1.612 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8z"/></g></svg>
                         <div class="event-title">
                             Anime buffet
                         </div>  
@@ -159,7 +161,7 @@
                         </div>
                     </div>
                     <div id="event1">
-                        <svg id="svg-1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" style="align-items: center; align-self:center; margin-bottom:15px;" data-image="jackbox.png"><path id="correct-path1" fill="currentColor" d="M483.13 245.38C461.92 149.49 430 98.31 382.65 84.33A107.13 107.13 0 0 0 352 80c-13.71 0-25.65 3.34-38.28 6.88C298.5 91.15 281.21 96 256 96s-42.51-4.84-57.76-9.11C185.6 83.34 173.67 80 160 80a115.74 115.74 0 0 0-31.73 4.32c-47.1 13.92-79 65.08-100.52 161C4.61 348.54 16 413.71 59.69 428.83a56.62 56.62 0 0 0 18.64 3.22c29.93 0 53.93-24.93 70.33-45.34c18.53-23.1 40.22-34.82 107.34-34.82c59.95 0 84.76 8.13 106.19 34.82c13.47 16.78 26.2 28.52 38.9 35.91c16.89 9.82 33.77 12 50.16 6.37c25.82-8.81 40.62-32.1 44-69.24c2.57-28.48-1.39-65.89-12.12-114.37ZM208 240h-32v32a16 16 0 0 1-32 0v-32h-32a16 16 0 0 1 0-32h32v-32a16 16 0 0 1 32 0v32h32a16 16 0 0 1 0 32Zm84 4a20 20 0 1 1 20-20a20 20 0 0 1-20 20Zm44 44a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288Zm0-88a20 20 0 1 1 20-20a20 20 0 0 1-20 20Zm44 44a20 20 0 1 1 20-20a20 20 0 0 1-20 20Z"/></svg>
+                        <svg class="pointer" id="svg-1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" style="align-items: center; align-self:center; margin-bottom:15px;" data-image="jackbox.png"><path id="correct-path1" fill="currentColor" d="M483.13 245.38C461.92 149.49 430 98.31 382.65 84.33A107.13 107.13 0 0 0 352 80c-13.71 0-25.65 3.34-38.28 6.88C298.5 91.15 281.21 96 256 96s-42.51-4.84-57.76-9.11C185.6 83.34 173.67 80 160 80a115.74 115.74 0 0 0-31.73 4.32c-47.1 13.92-79 65.08-100.52 161C4.61 348.54 16 413.71 59.69 428.83a56.62 56.62 0 0 0 18.64 3.22c29.93 0 53.93-24.93 70.33-45.34c18.53-23.1 40.22-34.82 107.34-34.82c59.95 0 84.76 8.13 106.19 34.82c13.47 16.78 26.2 28.52 38.9 35.91c16.89 9.82 33.77 12 50.16 6.37c25.82-8.81 40.62-32.1 44-69.24c2.57-28.48-1.39-65.89-12.12-114.37ZM208 240h-32v32a16 16 0 0 1-32 0v-32h-32a16 16 0 0 1 0-32h32v-32a16 16 0 0 1 32 0v32h32a16 16 0 0 1 0 32Zm84 4a20 20 0 1 1 20-20a20 20 0 0 1-20 20Zm44 44a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288Zm0-88a20 20 0 1 1 20-20a20 20 0 0 1-20 20Zm44 44a20 20 0 1 1 20-20a20 20 0 0 1-20 20Z"/></svg>
                         <div class="event-title">
                             Gaming night
                         </div>
@@ -168,7 +170,7 @@
                         </div>
                     </div>
                     <div id="event3">
-                        <svg id="svg-3" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="align-items: center; align-self:center; margin-bottom:15px;" data-image="showing.png">
+                        <svg id="svg-3" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="align-items: center; align-self:center; margin-bottom:15px;" data-image="showing.png" class="pointer">
                             <g fill="none">
                                 <path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/>
                                 <path id="correct-path3" fill="currentColor" d="m11.514 2.142l-1.26-.755l-.24 1.449C9.632 5.124 8.069 7.25 6.345 8.744C2.97 11.67 2.231 14.85 3.276 17.475c1 2.512 3.538 4.232 6.114 4.519l.596.066c-1.474-.901-2.42-3.006-2.09-4.579c.326-1.546 1.438-2.994 3.574-4.33l1.077-.672l.402 1.205c.237.712.647 1.284 1.064 1.865c.2.28.403.563.589.864c.643 1.045.813 2.207.398 3.36c-.378 1.048-1.002 1.872-1.86 2.329l.97-.108c2.418-.269 4.193-1.096 5.346-2.479C20.599 18.144 21 16.379 21 14.5c0-1.75-.719-3.554-1.567-5.055c-.994-1.758-2.291-3.218-3.707-4.633c-.245.49-.226.688-.73 1.475a8.146 8.146 0 0 0-3.482-4.145Z"/>
@@ -299,10 +301,10 @@
                         <!-- This is the container of the timeline of the leadership section -->
                         <div class="timeline__stepper">
                             <div class="timeline__step is-active">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-brain"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-brain"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -310,10 +312,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-bulb"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active" id="timeline-correct-path3">
+                                <svg class="timeline__icon timeline__icon--active pointer" id="timeline-correct-path3">
                                     <use href="#icon-bulb"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -321,10 +323,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-rocket"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">>
+                                <svg class="timeline__icon timeline__icon--active pointer">>
                                     <use href="#icon-rocket"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -332,10 +334,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-target"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-target"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -343,10 +345,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-fire"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-fire2"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -354,10 +356,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-customers"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-customers"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -365,10 +367,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-book"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-book2"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -376,10 +378,10 @@
                                 </p>
                             </div>
                             <div class="timeline__step">
-                                <svg class="timeline__icon timeline__icon--default">
+                                <svg class="timeline__icon timeline__icon--default pointer">
                                     <use href="#icon-seo"/>
                                 </svg>
-                                <svg class="timeline__icon timeline__icon--active">
+                                <svg class="timeline__icon timeline__icon--active pointer">
                                     <use href="#icon-seo"/>
                                 </svg>
                                 <p class="timeline__step-title">
@@ -465,11 +467,90 @@
                 </div>
             </div>
         </div>
+
         <!-- End of the Leadership section container -->
 
-        <div id="spaceHolder200"></div>
+        <div id="spaceHolder200">
+        </div>
 
-        <div class="contactInfoContainer">
+        <div id="floorActivityContainer">
+            <div id="floorActivitieTitle" style="margin: 40px; color: white; font-size: 25px; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 40px;">
+                <div class="snip1306">
+                    <div class="diamond"></div>
+                    <div class="diamond"></div>
+                    <div class="diamond"></div>
+                    <h1>Floor Activity</h1>
+                    <h5>Activities that we do on floor</h5>
+                    <h6>Since 2012</h6>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M4 15h2a2 2 0 0 1 2 2v2h1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2h1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2h1v3H1v-3h1v-2a2 2 0 0 1 2-2m7-8l4 3l-4 3V7M4 2h16a2 2 0 0 1 2 2v9.54a3.89 3.89 0 0 0-2-.54V4H4v9c-.73 0-1.41.19-2 .54V4a2 2 0 0 1 2-2Z"/></svg>
+                            <h3>Movie Trips</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M14 3.5c0 .83-.67 1.5-1.5 1.5S11 4.33 11 3.5S11.67 2 12.5 2s1.5.67 1.5 1.5M8.5 5C7.67 5 7 5.67 7 6.5S7.67 8 8.5 8S10 7.33 10 6.5S9.33 5 8.5 5m5.5 7l-.78-2.25h2.96l2.16-1.08c.37-.17.52-.63.33-1a.737.737 0 0 0-1-.34l-.82.41l-.49-.84c-.29-.65-1-1.02-1.7-.86l-2.47.53c-.69.15-1.19.78-1.19 1.5v.7l-2.43 1.62h.01c-.08.07-.19.16-.25.28l-.89 1.77l-1.78.89c-.37.17-.52.64-.33 1.01a.753.753 0 0 0 1.01.33l2.22-1.11L9.6 11.5L11 13c-1 3-8 7-8 7s4 2 9 2s9-2 9-2s-5-4-7-8m2.85-.91l-.32.16h-1.2l.06.16c.52 1.03 1.28 2.09 2.11 3.03l-.53-3.41l-.12.06Z"/></svg>
+                            <h3>Just Dance!</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M6.89 6.36C8.23 3.91 10 2 12 2c2 0 3.77 1.91 5.11 4.36c-.85.21-1.61.71-2.11 1.41a3.712 3.712 0 0 0-5.2-.8c-.3.22-.58.49-.8.8c-.5-.7-1.26-1.2-2.11-1.41M15 18.06l-3-3l-3 3l-3-3l-1.27 1.27a7.504 7.504 0 0 0 9.11 5.43a7.529 7.529 0 0 0 5.43-5.43L18 15.06l-3 3m-6-2.12l3-3l3 3l3-3l1.5 1.5c-.13-2.31-.7-4.58-1.69-6.68c-1.16.1-2.06 1.07-2.06 2.24h-1.5A2.25 2.25 0 0 0 12 7.75A2.25 2.25 0 0 0 9.75 10h-1.5c0-1.17-.9-2.14-2.06-2.24c-.99 2.1-1.56 4.37-1.69 6.68l1.5-1.5l3 3Z"/></svg>
+                            <h3>Saitamago</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="housingInfo"> 
+            <div>
+                <div>
+                    <span id="textArea1">
+                        Our&nbsp;housing&nbsp;application
+                        <br>
+                        <b>is&nbsp;closed</b>
+                    </span>
+                </div>
+            </div>
+            <div id="inBetweenDiv"></div>
+            <div>
+                <div>
+                    <span id="textArea2">
+                        Sorry&nbsp;about&nbsp;that!
+                        <br>
+                        <b>Please&nbsp;return&nbsp;later</b>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactInfoContainer" id="contactInfoContainer">
 	
             <div id="contactInfoTitle">CONTACT US / CLICK OUR LINKS</div>
 
@@ -477,13 +558,13 @@
             
             <ul class="social">
     
-                <li class="twitter"><a href="#" target="_blank">
+                <li class="twitter pointer"><a href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 1231.051 1000"><path fill="white" d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343q-60.685 92.824-144.574 164.468q-83.889 71.644-201.677 114.25q-117.788 42.606-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z"/></svg>
                 </a></li>
-                <li class="gmail"><a onclick="Copy()">
+                <li class="gmail pointer"><a onclick="Copy()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64L12 9.548l6.545-4.91l1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
                 </a></li>
-                <li class="discord"><a href="#" target="_blank">
+                <li class="discord pointer"><a href="#" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="white" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"/></svg>
                 </a></li>
     
