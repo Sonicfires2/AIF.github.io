@@ -256,3 +256,29 @@ function Copy() {
     navigator.clipboard.writeText("animeinterestfloor@gmail.com");
     backToInvisble();
 }
+
+const moveToAbout = () => {
+    console.log("Clicked")
+    document.getElementById("welcome-message").scrollIntoView({behavior: 'smooth'});
+}
+
+const moveToActivities = () => {
+    console.log("Clicked")
+    document.getElementById("placeHolder2").scrollIntoView({behavior: 'smooth'});
+}
+
+const moveToLeadership = () => {
+    console.log("Clicked")
+    document.getElementById("leadership-container").scrollIntoView({behavior: 'smooth'});
+}
+
+
+const moveToHousing = () => {
+    console.log("Clicked")
+    document.getElementById("floorActivityContainer").scrollIntoView({behavior: 'smooth'});
+}
+
+const moveToContact = () => {
+    console.log("Clicked")
+    document.getElementById("contactInfoContainer").scrollIntoView({behavior: 'smooth'});
+}
