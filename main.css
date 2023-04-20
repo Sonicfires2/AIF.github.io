@@ -111,9 +111,12 @@ body {
         top: 0;
         left: 0;
         /*who wants to bet FireFox will say FUCK YOU to webkit?*/
-        -webkit-animation: move 7s; 
+        -webkit-animation: move 7s;
         -webkit-animation-iteration-count: infinite; /*Important*/
-        -webkit-animation-delay: 1s; 
+        -webkit-animation-delay: 1s;
+        animation: move 7s;
+        animation-iteration-count: infinite; /*Important*/
+        animation-delay: 1s;
     }
     
     /*Animation for We are .... section in the about us section*/
@@ -160,6 +163,9 @@ body {
         -webkit-animation: move 7s;
         -webkit-animation-iteration-count: infinite; /*Important*/
         -webkit-animation-delay: 1s;
+        animation: move 7s;
+        animation-iteration-count: infinite; /*Important*/
+        animation-delay: 1s;
     }
     
     @keyframes move {
@@ -203,6 +209,9 @@ body {
         -webkit-animation: move 7s;
         -webkit-animation-iteration-count: infinite; /*Important*/
         -webkit-animation-delay: 1s;
+        animation: move 7s;
+        animation-iteration-count: infinite; /*Important*/
+        animation-delay: 1s;
     }
     
     @keyframes move {
