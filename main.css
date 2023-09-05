@@ -1256,15 +1256,6 @@ body a {
     font-weight: var(--font-weight-default);
     text-align: center; /*Important*/
 }
-@keyframes zoomIn {
-    0% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1.6); /* Adjust the scale factor as per your liking */
-    }
-}
-
 
 /*IMPORTANT*/
 /*TIMELINE STYLES: YOU NEED THEM!!! DO NOT FUCKING CHANGE THIS UNLESS YOU TESTED EVERYTHING OUT FIRST*/
@@ -1275,21 +1266,6 @@ body a {
     margin: auto;
     margin-left: 0px;
     margin-right: -20px;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('AIFLogo.png');
-    background-size: cover;
-    background-position: center center;
-    filter: blur(5px); /* Adjust blur value as desired */
-    z-index: 1;
-    animation: zoomIn 10s infinite alternate;
 }
 
 .timeline__stepper {
