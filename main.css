@@ -818,7 +818,7 @@ body {
     #image-1 {
         transition: 1s;
     }
-    #image-1:hover {
+    #image-1:active {
         transition: 1s;
         transform: scale(1.1);  /*Important*/
     }
