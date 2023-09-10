@@ -824,12 +824,12 @@ body {
     }
     .pictureContainer {
         position: relative;
-        height: fit-content; /*Important*/
+        height: 25vh; /*Important*/
         top: calc((1429px - 100vw)/12); /*Important*/
     }
     .pictureContainer .centerImage {
         width: 90%; /*Important*/
-        height: 20vh; /*Important*/
+        height: 25vh; /*Important*/
     } 
     .pictureContainer .sideImageRight, .pictureContainer .sideImageLeft {
         width: 29%; /*Important*/
@@ -1681,7 +1681,7 @@ body a {
         transform: translateY(100px);
     }
       
-    .container .card:hover .face.face1{
+    .container .card:active .face.face1{
         transform: translateY(0);
         box-shadow:
           inset 0 0 60px whitesmoke,
