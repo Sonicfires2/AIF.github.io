@@ -73,3 +73,28 @@ Have questions? Want to chat? Reach out on:
 ### 7️⃣ Contact
 
 - **Links & Info**: All you need to connect with us.
+
+## 🖥️ **JavaScript Functionality Breakdown**
+
+#### 🖼️ **1. Activities JavaScript**
+**Overview:** This section handles the behavior of displaying images associated with SVG icons clicked by the user.
+
+- **`currMiddleImage`**: Global variable tracking the displayed middle image.
+- **Event listeners for SVG icons**: Switches the main image when a different SVG icon is clicked.
+- **`imageToOldPosition()`**: Helper function to revert all the images to their default sources.
+
+#### 📅 **2. Leadership JavaScript**
+**Overview:** Manages a dynamic timeline for leadership positions and roles.
+
+- **`DOM`**: Constant holding string references to class names.
+- **Event listeners**: Ensure timeline responsiveness.
+- **Marker positioning**: Determine the positioning of the active marker.
+- **Step and Slide Activation/Deactivation**: Manage active step and slide.
+
+#### 🌐 **3. General Javascript for Website Navigation**
+**Overview:** Provides utility and navigation functions for various website elements.
+
+- **`backToInvisible()`**: Hides a visual element after 2 seconds.
+- **`Copy()`**: Inform user of email copy action with a visual alert.
+- **Scrolling functions**: Smooth navigation to different sections of the page.
+- **Card Toggle**: Toggle the active state of a clicked card.
