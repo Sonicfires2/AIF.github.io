@@ -281,3 +281,9 @@ const moveToContact = () => {
     console.log("Clicked")
     document.getElementById("contactInfoContainer").scrollIntoView({behavior: 'smooth'});
 }
+
+document.querySelectorAll('.card').forEach(function(card) {
+    card.addEventListener('click', function() {
+        this.classList.toggle('card-active');
+    });
+});
