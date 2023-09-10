@@ -1949,10 +1949,12 @@ body a {
         transition:  0.5s;
         text-align: center;
     }
-      
-    #floorActivityContainer .container .card:hover .face.face1 .content{
-        opacity: 1;   
+
+    #floorActivityContainer .container .card:hover .face.face1 .content,
+    #floorActivityContainer .container .card:active .face.face1 .content {
+        opacity: 1;
     }
+    
       
     #floorActivityContainer .container .card .face.face1 .content i{
         font-size: 3em;
@@ -1982,9 +1984,11 @@ body a {
         transform: translateY(-100px);
     }
       
-    #floorActivityContainer .container .card:hover .face.face2{
+    #floorActivityContainer .container .card:hover .face.face2,
+    #floorActivityContainer .container .card:active .face.face2 {
         transform: translateY(0);
     }
+
       
     #floorActivityContainer .container .card .face.face2 .content p, a{
         font-size: 10pt;
@@ -2001,11 +2005,12 @@ body a {
         margin: 15px 0 0;
         display: inline-block;
     }
-    #floorActivityContainer .container .card .face.face2 .content a:hover{
-        background: #333 ;
-        color: whitesmoke; 
-        box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-    }      
+    #floorActivityContainer .container .card .face.face2 .content a:hover,
+    #floorActivityContainer .container .card .face.face2 .content a:active {
+        background: #333;
+        color: whitesmoke;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
 }
 
 #housingInfo :before, *:after {
