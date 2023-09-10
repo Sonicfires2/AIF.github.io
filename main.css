@@ -1681,7 +1681,7 @@ body a {
         transform: translateY(100px);
     }
       
-    .container .card:active .face.face1{
+    .container .card:hover .face.face1{
         transform: translateY(0);
         box-shadow:
           inset 0 0 60px whitesmoke,
@@ -1700,7 +1700,7 @@ body a {
         text-align: center;
     }
       
-    #floorActivityContainer .container .card:active .face.face1 .content{
+    #floorActivityContainer .container .card:hover .face.face1 .content{
         opacity: 1;   
     }
       
@@ -1732,7 +1732,7 @@ body a {
         transform: translateY(-100px);
     }
       
-    #floorActivityContainer .container .card:active .face.face2{
+    #floorActivityContainer .container .card:hover .face.face2{
         transform: translateY(0);
     }
       
@@ -1753,7 +1753,7 @@ body a {
         display: inline-block;
     }
       
-    #floorActivityContainer .container .card .face.face2 .content a:active{
+    #floorActivityContainer .container .card .face.face2 .content a:hover{
         background: #333 ;
         color: whitesmoke; 
         box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
