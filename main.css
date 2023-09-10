@@ -829,7 +829,7 @@ body {
     }
     .pictureContainer .centerImage {
         width: 90%; /*Important*/
-        height: fit-content; /*Important*/
+        height: 20vh; /*Important*/
     } 
     .pictureContainer .sideImageRight, .pictureContainer .sideImageLeft {
         width: 29%; /*Important*/

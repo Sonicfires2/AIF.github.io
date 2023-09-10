@@ -272,7 +272,6 @@ const moveToLeadership = () => {
     document.getElementById("leadership-container").scrollIntoView({behavior: 'smooth'});
 }
 
-
 const moveToHousing = () => {
     console.log("Clicked")
     document.getElementById("floorActivityContainer").scrollIntoView({behavior: 'smooth'});
