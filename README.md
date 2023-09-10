@@ -1,37 +1,75 @@
-# AIF.github.io
+# 🌸 Anime Interest Floor (AIF) Website
 
-The website is here at: https://sonicfires2.github.io/AIF.github.io/main.html
+Welcome to the **Anime Interest Floor** repository. Dive into a community hub for not just anime enthusiasts but also lovers of Gacha, gaming, coding, and beyond. At AIF, we believe in more than just the joy of anime; we're about togetherness, respectfulness, and celebrating diversity.
 
-Website intended structure:
+## 🚀 Installation & Usage
 
-Welcome
-- navbar
-- Intro title     - Intro picture
-- Intro paragraph
+1. Clone this repository.
+2. Open `main.html` in your preferred browser.
 
-Values
-- "We are ..." section
-- Value titles
-  - Different values description
+🔔 **Note:** Ensure you've linked `main.js` correctly to unlock all dynamic functionalities.
 
-Activities
-- Pictures of activities
-- Activities symbols
-  - Description of activties
+🌐 **Live Website:** [AIF Website](https://sonicfires2.github.io/AIF.github.io/main.html).
 
-Leadership
-- Leadership slide bar
-- Div displaying the roles of each position
-  - Description of each roles
-  - Maybe include current leaderships pictures
+## 🤝 Contributing
 
-Why us?
-- Just a section to show the advantages of joining the floor
+Interested in making a contribution? Wonderful!
 
-Housing Info
-- Information about on-floor activity 
-- Infomation about housing process
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes and improvements.
+4. Submit a pull request.
 
-Contact
-- Contact info/links
-- Gmail
+## 📞 Contact Us
+
+Have questions? Want to chat? Reach out on:
+
+- 📸 Instagram
+- 💬 Discord
+- 📧 Email: [animeinterestfloor@gmail.com](mailto:animeinterestfloor@gmail.com)
+
+## 🖥️ Website Structure
+
+### 1️⃣ Welcome
+
+- **Navbar**: Swiftly navigate through our sections.
+- **Intro Section**:
+  - **Title**: Welcoming you to the Anime Interest Floor.
+  - **Image**: Our proud AIF logo or an intro image.
+  - **Paragraph**: A short & sweet hello from us.
+
+### 2️⃣ Values
+
+- **We Are...**: A peek into our diverse community.
+- **Value Titles and Descriptions**:
+  - 🤝 **Togetherness**: Celebrating our unity.
+  - 💕 **Respectfulness**: Our ethos of mutual respect.
+  - 🌍 **Diversity**: Embracing and cherishing every unique member.
+
+### 3️⃣ Activities
+
+- **Photos**: Relive our past events and activities.
+- **Symbols and Descriptions**:
+  - 🍿 **Anime Buffet**: Dive into anime marathons.
+  - 🎮 **Gaming Night**: Gear up for thrilling game nights.
+  - 📺 **Anime Showing**: Discover and enjoy curated anime.
+
+### 4️⃣ Leadership
+
+- **Slide Bar**: Visualizing our leadership hierarchy.
+- **Roles & Descriptions**:
+  - **Titles**: From President to Members, know the roles.
+  - 📸 **(Upcoming)**: Get to know our leadership with photos and bios.
+
+### 5️⃣ Why Us?
+
+- 🌟 **Benefits**: Unveiling perks of being a part of AIF.
+
+### 6️⃣ Housing Info
+
+- **Floor Activities**: Experience events exclusive to our space.
+- **Housing Process**: Navigate the application process with ease.
+
+### 7️⃣ Contact
+
+- **Links & Info**: All you need to connect with us.
