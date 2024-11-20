@@ -71,6 +71,7 @@ body {
     font-style: normal; /*Important*/
     font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 #mainContainer {
@@ -78,6 +79,7 @@ body {
     flex-direction: column; /*Important*/
     justify-content: center; 
     align-items: center;
+    overflow-x: hidden;
 }
 
 .needBorder {
@@ -784,6 +786,16 @@ body {
     }
 }
 
+.placeHolder2 {
+    padding-top: 100px;
+    height: 600px;
+    background-color: #00DBDE;
+}
+
+.activities-container {
+    height: fit-content;
+    padding-bottom: 50px;
+}
 
 /*CSS code for the activities section*/
 .pictureContainer {
@@ -791,6 +803,17 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.pictureContainer img {
+    height: auto;
+    width: auto;
+    max-height: 250px;
+    max-width: 600px;
+}
+
+.pictureContainer .centerImage {
+    scale: 1.2;
 }
 
 .placeHolder90 {
@@ -828,13 +851,12 @@ body {
         top: calc((1429px - 100vw)/12); /*Important*/
     }
     .pictureContainer .centerImage {
-        width: 90%; /*Important*/
-        height: 20vh; /*Important*/
+        width: 80%; /*Important*/
+        height: auto; /*Important*/
+        overflow: hidden;
+        max-height: 250px;
+        max-width: 500px;
     } 
-    .pictureContainer .sideImageRight, .pictureContainer .sideImageLeft {
-        width: 29%; /*Important*/
-        height: 20vh; /*Important*/
-    }
 
     #activities-container {
         background-color: var(--activities-container-color);
@@ -921,11 +943,15 @@ body {
     }
     .pictureContainer .centerImage {
         width: 37%; /*Important*/
-        height: 120px; /*Important*/
+        height: auto; /*Important*/
+        max-height: 250px;
+        max-width: 600px;
     } 
     .pictureContainer .sideImageRight, .pictureContainer .sideImageLeft {
         width: 29%; /*Important*/
-        height: 105px; /*Important*/
+        height: calc(auto - 20px); /*Important*/
+        max-height: 250px;
+        max-width: 600px;
     }
     #image-1 {
         transition: 1s;
