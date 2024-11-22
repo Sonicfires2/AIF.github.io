@@ -259,7 +259,8 @@ function Copy() {
 
 const moveToAbout = () => {
     console.log("Clicked")
-    document.getElementById("welcome-message").scrollIntoView({behavior: 'smooth'});
+    window.location.href = "https://sonicfires2.github.io/landing-page-aif/";
+    // document.getElementById("welcome-message").scrollIntoView({behavior: 'smooth'});
 }
 
 const moveToActivities = () => {
